@@ -86,11 +86,31 @@ class _HomePageState extends State<HomePage> {
           const Column(
             children: [
               FeatureBox(
+                headerText: 'ChatGPT',
+                descriptionText:
+                    "A smarter way to stay organised and informed with ChatGPT",
                 color: Pallete.firstSuggestionBoxColor,
+              ),
+              FeatureBox(
+                headerText: 'Dall-E',
+                descriptionText:
+                    "Get Inspired and stay creative with your personal assistance powered by Dall-E",
+                color: Pallete.secondSuggestionBoxColor,
+              ),
+              FeatureBox(
+                headerText: 'Smart Voice Assistance',
+                descriptionText:
+                    "Get the best of both worlds with a voice assistance powered by Dall-E and chatGPT",
+                color: Pallete.thirdSuggestionBoxColor,
               ),
             ],
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Pallete.firstSuggestionBoxColor,
+        onPressed: () {},
+        child: const Icon(Icons.mic),
       ),
     );
   }
