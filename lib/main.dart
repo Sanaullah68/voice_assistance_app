@@ -15,9 +15,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(useMaterial3: true).copyWith(
-        scaffoldBackgroundColor: Pallete.whiteColor,
-      ),
+      theme: ThemeData.light(
+        useMaterial3: true,
+      ).copyWith(
+          scaffoldBackgroundColor: Pallete.whiteColor,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Pallete.whiteColor,
+          )),
       home: const HomePage(),
     );
   }
